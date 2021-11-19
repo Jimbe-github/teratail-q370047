@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+  <TextView
+      android:id="@+id/registLabel"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:paddingTop="3dp"
+      android:paddingBottom="3dp"
+      android:text="募集"
+      android:textAlignment="center"
+      android:background="@color/regist_title"
+      app:layout_constraintBottom_toTopOf="@id/registList"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <ListView
+      android:id="@+id/registList"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:background="@color/regist_background"
+      app:layout_constraintBottom_toTopOf="@id/registButton"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/registLabel" />
+
+  <Button
+      android:id="@+id/registButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="募集作成"
+      app:layout_constraintBottom_toTopOf="@id/joinLabel"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/registList" />
+
+  <TextView
+      android:id="@+id/joinLabel"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:paddingTop="3dp"
+      android:paddingBottom="3dp"
+      android:text="参加予定"
+      android:textAlignment="center"
+      android:background="@color/join_title"
+      app:layout_constraintBottom_toTopOf="@id/joinList"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/registButton" />
+
+  <ListView
+      android:id="@+id/joinList"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:background="@color/join_background"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/joinLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <TextView
+      android:id="@+id/contentLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="内容:"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+  <TextView
+      android:id="@+id/contentText"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintLeft_toRightOf="@id/contentLabel"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/placeLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="場所:"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/contentText" />
+  <TextView
+      android:id="@+id/placeText"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintLeft_toRightOf="@id/placeLabel"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/contentText" />
+
+  <TextView
+      android:id="@+id/datetimeLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="日時:"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/placeText" />
+  <TextView
+      android:id="@+id/datetimeText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="xx/xx xx:xx"
+      app:layout_constraintLeft_toRightOf="@id/datetimeLabel"
+      app:layout_constraintTop_toBottomOf="@id/placeText" />
+
+  <TextView
+      android:id="@+id/numberLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="人数:"
+      android:layout_marginLeft="40dp"
+      app:layout_constraintLeft_toRightOf="@id/datetimeText"
+      app:layout_constraintTop_toBottomOf="@id/placeText" />
+  <TextView
+      android:id="@+id/numberText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="xx 人"
+      app:layout_constraintLeft_toRightOf="@id/numberLabel"
+      app:layout_constraintTop_toBottomOf="@id/placeText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

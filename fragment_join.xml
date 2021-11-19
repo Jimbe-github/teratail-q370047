@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/join_background"
+    tools:context=".JoinFragment">
+
+  <TextView
+      android:id="@+id/contentLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="内容:"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintBaseline_toBaselineOf="@id/contentText" />
+  <TextView
+      android:id="@+id/contentText"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintLeft_toRightOf="@id/contentLabel"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/placeLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="場所:"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintBaseline_toBaselineOf="@id/placeText" />
+  <TextView
+      android:id="@+id/placeText"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintLeft_toRightOf="@id/placeLabel"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/contentText" />
+
+
+  <TextView
+      android:id="@+id/dateLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="日時:"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintBaseline_toBaselineOf="@id/dateText" />
+  <TextView
+      android:id="@+id/dateText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintLeft_toRightOf="@id/dateLabel"
+      app:layout_constraintTop_toBottomOf="@id/placeText" />
+
+  <TextView
+      android:id="@+id/timeLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="日時:"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintBaseline_toBaselineOf="@id/timeText" />
+  <TextView
+      android:id="@+id/timeText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintLeft_toRightOf="@id/timeLabel"
+      app:layout_constraintTop_toBottomOf="@id/dateText" />
+
+  <TextView
+      android:id="@+id/numberLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="人数:"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintBaseline_toBaselineOf="@id/numberText" />
+  <TextView
+      android:id="@+id/numberText"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintLeft_toRightOf="@id/numberLabel"
+      app:layout_constraintTop_toBottomOf="@id/timeText" />
+
+  <Button
+      android:id="@+id/joinButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="参加"
+      android:layout_marginTop="20dp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toLeftOf="@id/cancelButton"
+      app:layout_constraintTop_toBottomOf="@id/numberText" />
+
+  <Button
+      android:id="@+id/cancelButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="中止"
+      app:layout_constraintLeft_toRightOf="@id/joinButton"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintBaseline_toBaselineOf="@id/joinButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

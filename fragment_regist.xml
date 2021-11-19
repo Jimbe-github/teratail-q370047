@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/regist_background"
+    tools:context=".RegistFragment">
+
+  <TextView
+      android:id="@+id/contentLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="内容:"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintBaseline_toBaselineOf="@id/contentEdit" />
+  <EditText
+      android:id="@+id/contentEdit"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:inputType="text"
+      app:layout_constraintLeft_toRightOf="@id/contentLabel"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/placeLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="場所:"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintBaseline_toBaselineOf="@id/placeEdit" />
+  <EditText
+      android:id="@+id/placeEdit"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:inputType="text"
+      app:layout_constraintLeft_toRightOf="@id/placeLabel"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/contentEdit" />
+
+
+  <TextView
+      android:id="@+id/dateLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="日時:"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintBaseline_toBaselineOf="@id/dateEdit" />
+  <EditText
+      android:id="@+id/dateEdit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:inputType="date"
+      app:layout_constraintLeft_toRightOf="@id/dateLabel"
+      app:layout_constraintTop_toBottomOf="@id/placeEdit" />
+
+  <TextView
+      android:id="@+id/timeLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="日時:"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintBaseline_toBaselineOf="@id/timeEdit" />
+  <EditText
+      android:id="@+id/timeEdit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:inputType="time"
+      app:layout_constraintLeft_toRightOf="@id/timeLabel"
+      app:layout_constraintTop_toBottomOf="@id/dateEdit" />
+
+  <TextView
+      android:id="@+id/numberLabel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="人数:"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintBaseline_toBaselineOf="@id/numberEdit" />
+  <EditText
+      android:id="@+id/numberEdit"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="3"
+      android:inputType="number"
+      app:layout_constraintLeft_toRightOf="@id/numberLabel"
+      app:layout_constraintTop_toBottomOf="@id/timeEdit" />
+
+  <Button
+      android:id="@+id/registButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="登録"
+      android:layout_marginTop="20dp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toLeftOf="@id/cancelButton"
+      app:layout_constraintTop_toBottomOf="@id/numberEdit" />
+
+  <Button
+      android:id="@+id/cancelButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="中止"
+      app:layout_constraintLeft_toRightOf="@id/registButton"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintBaseline_toBaselineOf="@id/registButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

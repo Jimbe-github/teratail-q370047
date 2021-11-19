@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="regist_title">#c0f0c0</color>
+  <color name="regist_background">#dfffdf</color>
+  <color name="join_title">#e0e0ff</color>
+  <color name="join_background">#f0f0ff</color>
+</resources>
